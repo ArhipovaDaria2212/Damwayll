@@ -1,0 +1,403 @@
+@import url(./reset.css);
+
+@font-face {
+    font-family: 'GeorgeRounded';
+    src: url('/fonts/GeorgeRoundedRegular.woff2') format('woff2'),
+        url('/fonts/GeorgeRoundedRegular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&family=Roboto&display=swap');
+
+h1 {
+    font-family: 'Josefin Sans', serif;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 63px;
+}
+
+h2 {
+    font-family: 'Josefin Sans', serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+h3 {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+}
+
+h4 {
+    font-family: 'Cedarville Cursive';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 53px;
+}
+
+p {
+    font-family: 'Alegreya Sans';
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+}
+
+h6 {
+    font-family: 'Josefin Sans';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.btn {
+    font-family: 'GeorgeRounded';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    padding: 14px 0 15px 0;
+    min-width: 235px;
+    background: #2D635E;
+    border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header {
+    padding: 36px 0 0 0;
+}
+
+.header__inner,
+.header__menu,
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu {
+    gap: 57px;
+}
+
+.header__nav {
+    gap: 90px;
+}
+
+.header__nav__item,
+.header__button {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    line-height: 1;
+}
+
+.header__nav__item:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2D635E;
+    content: "";
+    transition: 0.2s ease-out;
+}
+
+.header__nav__item:hover:after {
+    width: 100%;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    scroll-behavior: smooth;
+}
+
+.header__button {
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    font-size: 16px;
+    background: #2D635E;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    padding: 14px 33px;
+    color: #fff;
+}
+
+/* chapter1 */
+
+.chapter1__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.chapter1__content {
+    padding: 158px 0 0 0;
+    text-align: left;
+}
+
+.chapter1__title {
+    padding: 26px 0;
+}
+
+.chapter1__picture {
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chapter1__arrow-right {
+    text-align: center;
+    padding: 78px 67px 73px;
+    width: 159px;
+    height: 157px;
+    background: rgba(227, 235, 231, 0.4);
+}
+
+.chapter1__coffee {
+    position: relative;
+    min-width: 410px;
+    min-height: 466px;
+    background: rgb(227, 235, 231);
+}
+
+.chapter1__img {
+    position: absolute;
+    top: 140px;
+    left: 39px;
+}
+
+.chapter1__follow {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    padding: 0 0 123px 40px;
+}
+
+.chapter1__text {
+    position: absolute;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    bottom: 40px;
+    right: -40px;
+}
+
+/* chapter2 */
+
+.chapter2__inner {
+    padding: 197px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.chapter2__picture {
+    position: relative;
+}
+
+.chapter2__about {
+    position: absolute;
+    transform: rotate(-90deg);
+    z-index: 99;
+    white-space: nowrap;
+    top: 8px;
+    left: -45px;
+}
+
+.chapter2__cup {
+    position: relative;
+    background: #FAE9E0;
+    min-width: 380px;
+    min-height: 287px;
+}
+
+.chapter2__img {
+    position: absolute;
+    top: 78px;
+    left: 28px;
+}
+
+.chapter2__content {
+    max-width: 645px;
+}
+
+.chapter2__text p:first-child {
+    padding: 25px 0 15px 0;
+}
+
+/* chapter3 */
+
+.chapter3__inner {
+    padding: 157px 0 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chapter3__content {
+    max-width: 615px;
+}
+
+.chapter3__text {
+    padding: 25px 0 24px 0;
+}
+
+.chapter3__picture {
+    position: relative;
+    background: #E3EBE7;
+    min-width: 410px;
+    min-height: 276px;
+    margin: 0 72px 0 0;
+}
+
+.chapter3__promotion {
+    position: absolute;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    top: 7px;
+    right: -50px;
+}
+
+.chapter3__img {
+    position: absolute;
+    top: -30px;
+    left: 72px;
+}
+
+/* chapter4 */
+
+.chapter4 {
+    background: rgba(45, 99, 94, 0.05);
+    min-height: 550px;
+}
+
+.slider {
+    position: relative;
+}
+
+.owl-carousel {
+    margin: 0 auto;
+    max-width: 1083px;
+    padding-top: 48px;
+}
+
+.owl-item {
+   max-width: 340px;
+}
+
+.slider__card {
+    position: relative;
+    border-radius: 25px; 
+    background: #fff;
+    padding: 44px 54px 47px;
+    text-align: center;
+}
+
+.slider__card-text {
+    padding: 25px 0 43px;
+}
+
+.slider__btn {
+    position: absolute;
+    min-height: 38px;
+    min-width: 22px;
+    z-index: 99;
+}
+
+.slider__btn--prev {
+    top: calc(50% - 19px);
+    left: 0;
+}
+
+.slider__btn--next {
+    top: calc( 50% - 19px );
+    right: 0;
+}
+
+/* chapter5 */
+
+.chapter5 {
+    padding: 131px 0 114px;
+}
+
+.chapter5__inner {
+    display: flex;
+    justify-content: center;
+    gap: 176px;
+    position: relative;
+}
+
+.chapter5__inner::after {
+    content: "";
+    position: absolute;
+    width: 102px;
+    height: 2px;
+    background: #444A4A;
+    top: 36px;
+    right: 335px;
+}
+
+.chapter5__picture {
+    position: relative;
+}
+
+.chapter5__contacts {
+    position: absolute;
+    top: 3px;
+    right: -41px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+}
+
+.chapter5__content {
+    max-width: 220px;
+    padding: 13px 0 0;
+}
+
+.chapter5__title {
+    font-family: 'Josefin Sans', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 45px;
+    padding: 0 0 21px;
+}
+
+.chapter5__text p {
+    padding: 0 0 16px;
+}
+
+.chapter5__text p:last-child {
+    padding: 0;
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+}
+
+/* adaptive */
+
+@media (max-width: 600) {
+    .owl-stage {
+        max-width: 700px;
+        overflow: hidden;
+    }
+}
